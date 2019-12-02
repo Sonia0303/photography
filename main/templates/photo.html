@@ -1,0 +1,292 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Photty - Masonry</title>
+
+	<link rel="stylesheet"  href="{% static 'theme/assets/css/kube.css' %}">
+	<link rel="stylesheet"  href="{% static 'theme/assets/css/font-awesome.css' %}">
+	<link rel="stylesheet"  href="{% static 'theme/assets/css/swipebox.css' %}">
+	<link rel="stylesheet"  href="{% static 'theme/assets/css/style.css' %}">
+</head>
+<body>
+	<div class="photty_preloader_wrapper">
+		<div class="photty_preloader_bar">
+			<div class="photty_preloader_line"></div>
+		</div>
+	</div>
+	<header class="photty_header">
+		<div class="row ">			
+			<div class="col col-12 photty_def_header">
+				<div class="photty_logo_cont">
+					<a href="/" class="photty_image_logo">
+					</a>
+				</div>
+				<nav class="photty_menu_cont">
+					<ul id="menu-main-menu" class="photty_menu">
+						<li class="menu-item"><a href="/about/">About</a></li>
+                        <li class="menu-item active"><a href="/photo/">Photos</a></li>
+{#							<ul class="sub-menu">#}
+{#								<li class="menu-item"><a href="album-listing.html">Albums Listing</a></li>#}
+{#								<li class="menu-item"><a href="album-slider.html">Albums Slider</a></li>#}
+{#								<li class="menu-item"><a href="album-single.html">Inside Album</a></li>#}
+{#								<li class="menu-item"><a href="grid-gallery.html">Grid Gallery</a></li>		#}
+{#								<li class="menu-item photty_sub_menu_active"><a href="masonry-gallery.html">Masonry Gallery</a></li>							#}
+{#								<li class="menu-item"><a href="ribbon-gallery.html">Ribbon Gallery</a></li>#}
+{#								<li class="menu-item"><a href="index.html">Slider</a></li>#}
+{#								<li class="menu-item"><a href="slider-thumbnails.html">Slider with Thumbs</a></li>#}
+{#								<li class="menu-item"><a href="split-showcase.html">Split Showcase</a></li>#}
+{#							</ul>#}
+{#						</li>#}
+						<li class="menu-item"><a href="#">Blog</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="blog-grid.html">Grid</a></li>
+								<li class="menu-item"><a href="blog-fullwidth.html">Fullwidth</a></li>
+								<li class="menu-item"><a href="blog-left-sidebar.html">With Left Sidebar</a></li>
+								<li class="menu-item"><a href="blog-right-sidebar.html">With Right sidebar</a></li>
+								<li class="menu-item"><a href="#">Blog Posts<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class=" sub-menu1">
+										<li class="menu-item"><a href="blog-single-post.html">Standard Post</a></li>
+										<li class="menu-item"><a href="blog-single-post-image.html">Image Post</a></li>
+										<li class="menu-item"><a href="blog-single-post-video.html">Video Post</a></li>
+										<li class="menu-item"><a href="blog-single-post-audio.html">Audio Post</a></li>
+										<li class="menu-item"><a href="blog-single-post-quote.html">Quote Post</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class=" menu-item "><a href="#">Features</a>
+							<ul class="sub-menu">
+								<li class="menu-item "><a href="typography.html">Typography</a></li>
+								<li class="menu-item"><a href="boxed-layout.html">Boxed Layout</a></li>
+								<li class="menu-item"><a href="stripes-fullscreen.html">Photographers</a></li>
+								<li class="menu-item"><a href="404.html">404 Page</a></li>
+								<li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
+							</ul>
+						</li>
+						<li class="menu-item"><a href="contacts.html">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</div>
+			<div class="mobile_header ">
+				<a href="index.html" class="photty_image_logo"></a>
+				<a href="javascript:void(0)" class="btn_mobile_menu">
+					<span class="photty_menu_line1"></span>
+					<span class="photty_menu_line2"></span>
+					<span class="photty_menu_line3"></span>
+				</a>
+			</div>
+		</div>			
+	</header>
+
+
+	<section class="photty_grid_gallery photty_masonry_gallery">
+		<div class="row">
+			<div class="col col-12 photty_content">
+				<div class="photty_masonry_gallery_element">
+					<div class="photty_isotope">
+						<div class="grid1">
+							<div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/hori.JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">	
+										<img src="{% static 'theme/assets/project_images/hori.JPG' %}" alt="">
+									</div>
+								</a>				
+							</div>
+							<div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/00 (32).JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">	
+										<img src="{% static 'theme/assets/project_images/00 (32).JPG' %}" alt="">
+									</div>
+								</a>				
+							</div>
+							<div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/00 (45).JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">	
+										<img src="{% static 'theme/assets/project_images/00 (45).JPG' %}" alt="">
+									</div>
+								</a>					
+							</div>
+							<div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/DSC_0410.JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">	
+										<img src="{% static 'theme/assets/project_images/DSC_0410.JPG' %}" alt="">
+									</div>
+								</a>					
+							</div>
+							<div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/DSC_5034.JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">	
+										<img src="{% static 'theme/assets/project_images/DSC_5034.JPG' %}" alt="">
+									</div>
+								</a>					
+							</div>
+							<div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/DSC_6254.JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">	
+										<img src="{% static 'theme/assets/project_images/DSC_6254.JPG' %}" alt="">
+									</div>
+								</a>					
+							</div>
+							<div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/DSC_7219.JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">	
+										<img src="{% static 'theme/assets/project_images/DSC_7219.JPG' %}" alt="">
+									</div>
+								</a>					
+							</div>
+							<div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/EGZJ4815.JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">	
+										<img src="{% static 'theme/assets/project_images/EGZJ4815.JPG' %}" alt="">
+									</div>
+								</a>					
+							</div>
+							<div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/EOMH4472.JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">	
+										<img src="{% static 'theme/assets/project_images/EOMH4472.JPG' %}" alt="">
+									</div>
+								</a>					
+							</div>
+                            <div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/GVCK6879.JPG' %}" class="swipebox">
+									<div class="photty_grayscale_img">
+										<img src="{% static 'theme/assets/project_images/GVCK6879.JPG' %}" alt="">
+									</div>
+								</a>
+							</div>
+                            <div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/image2 (5) copy.jpg' %}" class="swipebox">
+									<div class="photty_grayscale_img">
+										<img src="{% static 'theme/assets/project_images/image2 (5) copy.jpg' %}" alt="">
+									</div>
+								</a>
+							</div>
+                            <div class="grid-item grid-item--width2">
+								<a href="{% static 'theme/assets/project_images/image4 (2) copy.jpg' %}" class="swipebox">
+									<div class="photty_grayscale_img">
+										<img src="{% static 'theme/assets/project_images/image4 (2) copy.jpg' %}" alt="">
+									</div>
+								</a>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>			
+			</div>
+		</div>
+	</section>	
+	<div class="photty_back_to_top"></div>
+	<footer class="photty_footer ">
+		<div class="photty_container">
+			<div class="row gutters photty_footer_content">
+				<div class="col col-3">
+					<h6>CONTACT INFO</h6>
+					<div class="photty_footer_contact">
+						<div class="photty_footer_contact_block">
+							<div class="photty_cont_name">Address:</div>
+							<div class="photty_cont_value">1600 Pennsylvania Ave NW, Washington</div>
+						</div>
+						<div class="photty_footer_contact_block">
+							<div class="photty_cont_name">Phone:</div>
+							<div class="photty_cont_value">+1 (800) 456 37 96<br>+1 (800) 456 37 96 - Fax</div>
+						</div>
+						<div class="photty_footer_contact_block">
+							<div class="photty_cont_name">Email:</div>
+							<div class="photty_cont_value"><a href="#">email@company.com</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-3">
+					<h6>GALLERY</h6>
+					<ul class="photty_footer_gallery">
+						<li><a class="photty_image_fader" href="album-single.html">
+							<img src="img/28-364x364.jpg" alt="">
+						</a></li>
+						<li><a class="photty_image_fader" href="album-single.html">
+							<img src="img/45-364x364.jpg" alt="">
+						</a></li>
+						<li><a class="photty_image_fader" href="album-single.html">
+							<img src="img/19-364x364.jpg" alt="">
+						</a></li>
+						<li><a class="photty_image_fader" href="album-single.html">
+							<img src="img/17-364x364.jpg" alt="">
+						</a></li>
+						<li><a class="photty_image_fader" href="album-single.html">
+							<img src="img/16-364x364.jpg" alt="">
+						</a></li>
+						<li><a class="photty_image_fader" href="album-single.html">
+							<img src="img/15-364x364.jpg" alt="">
+						</a></li>
+					</ul>
+				</div>
+				<div class="col col-3">
+					<h6>RECENT POSTS</h6>
+					<div class="photty_footer_posts">
+						<div class="photty_footer_contact_block">
+							<a class="" href="blog-single-post.html">Jeans and Tattoos</a>
+							<div class="photty_meta">
+								<div>January 26, 2017</div>
+								<div>by <a href="category.html">pixel-mafia</a></div>
+							</div>	
+						</div>
+						<div class="photty_footer_contact_block">
+							<a href="blog-single-post-quote.html">Ted Grant</a>
+							<div class="photty_meta">
+								<div>January 26, 2017</div>
+								<div>by <a href="category.html">pixel-mafia</a></div>
+							</div>	
+						</div>
+						<div class="photty_footer_contact_block">
+							<a href="blog-single-post-video.html">Vimeo Experience</a>
+							<div class="photty_meta">
+								<div>January 26, 2017</div>
+								<div>by <a href="category.html">pixel-mafia</a></div>
+							</div>	
+						</div>
+					</div>
+				</div>	
+				<div class="col col-3">
+					<h6>ABOUT US</h6>
+					<p>Lorem ipsum dolor sit amet, consectetu adipiscing elit. Sed quis augue enim ho. In eg fermentum.</p>
+					<p>Duis in imperdiet diam. Pellentesque tul laoreet nibh lorem, non lorem.</p>
+					<ul class="photty_social_block">
+						<li><a class="facebook" href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a class="twitter" href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a class="vk" href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+						<li><a class="google" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a class="pinterest" href="https://www.pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+						<li><a class="envelope" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="photty_container">
+			<div class="row photty_copyright_block">
+				<div class="col col-12">
+					<div class="photty_logo_cont">
+						<a href="index.html" class="photty_image_logo">                        
+						</a>
+					</div>
+					<div class="photty_copy_text">Copyright © 2017 Photty. All Rights Reserved.</div>
+				</div>	
+			</div>
+		</div>
+	</footer>
+	<script src="{% static 'theme/assets/js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'theme/assets/js/imagesloaded.pkgd.min.js' %}"></script>
+	<script src="{% static 'theme/assets/js/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'theme/assets/js/jquery.swipebox.js' %}"></script>
+	<script src="{% static 'theme/assets/js/index.js' %}"></script>
+</body>
+</html>
